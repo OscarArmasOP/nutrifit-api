@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-    const historial = sequelize.define('historial', {
+    const historial_clinico = sequelize.define('historiales_clinicos', {
         //Campos de nuestra tabla
         id_historial: {
             autoIncrement: true,
@@ -20,5 +20,5 @@ module.exports = (sequelize, DataTypes) => {
         updatedAt: DataTypes.DATE
     });
 
-    return historial;
+    return historial_clinico;
 }

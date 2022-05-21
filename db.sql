@@ -17,13 +17,13 @@ CREATE TABLE public.dietas (
 	CONSTRAINT dietas_pkey PRIMARY KEY (id_dieta)
 );
 
--- public.historial definition
+-- public.historiales_clinicos definition
 
 -- Drop table
 
--- DROP TABLE public.historial;
+-- DROP TABLE public.historiales_clinicos;
 
-CREATE TABLE public.historial (
+CREATE TABLE public.historiales_clinicos (
 	id_historial serial4 NOT NULL,
 	id_paciente int4 NULL,
 	motivo varchar(500) NULL,
@@ -37,7 +37,7 @@ CREATE TABLE public.historial (
 	circunferencia_muñeca int4 NULL,
 	"createdAt" date NULL,
 	"updatedAt" date NULL,
-	CONSTRAINT historial_pkey PRIMARY KEY (id_historial)
+	CONSTRAINT historiales_clinicos_pkey PRIMARY KEY (id_historial)
 );
 
 -- public.usuarios definition

@@ -19,6 +19,8 @@ app.use((req, res, next) => {
 
 //------Rutas------------
 require('./server/routes/usuarios')(app);
+require('./server/routes/dietas')(app);
+require('./server/routes/historiales_clinicos')(app);
 
 app.get('*', (req, res) => {
     res.status(200).send({ message: "Bienvenido" });
